@@ -1,0 +1,13 @@
+---
+spring:
+  profiles: dev #开发环境  激活的配置文件(值可以为 false dev prod test) application-dev.yml
+  application:
+    name: eureka-provider-dev
+server:
+  port: 8888
+
+---
+spring:
+  profiles: test #测试环境
+  application:
+    name: eureka-provider-test
